@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header__container--title {
+  font-weight: 400;
+  font-size: 63.3468px;
+  line-height: 64px;
+  padding: 17px 45px;
+  text-align: center;
+  flex-wrap: nowrap;
+  font-size: 55px;
+  padding: 17px 45px;
+  margin: 150px 8px 0;
+  font-family: "Stag-Sans", sans-serif;
+  
+}
+
+.title-1 {
+  width: 452px;
+  box-sizing: border-box;
+  font-style: italic;
+  background-color: black;
+  border-radius: 84px;
+  color: #fed16e;
+  margin-right: 17px;
+
+  border-radius: 84px;
+}
+
+.title-2 {
+  width: 876.93px;
+  box-sizing: border-box;
+
+  border: 4px solid #ff7c16;
+  border-radius: 49.5233px;
+  position: relative;
+}
+
+.title-2 span {
+  margin: 0 80px;
+}
+
+.title-2 span::after {
+  content: "";
+  position: absolute;
+  top: -37px;
+  left: 365px;
+  height: 180px;
+  width: 180px;
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-size: 180px 180px;
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 1230px) {
+  .title-2 {
+    width: 776.93px;
+    padding: 17px 5px;
+  }
+
+  .title-2 span::after {
+    top: -37px;
+    left: 315px;
+  }
+}
+
